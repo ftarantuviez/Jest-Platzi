@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Snapshot Comprobar la UI del componente Footer 1`] = `
+exports[`Footer Snapshot Comprobar la UI del componente de Footer 1`] = `
 <div
   className="Footer class"
 >

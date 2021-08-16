@@ -5,14 +5,15 @@ describe('Fetch API', () => {
     fetch.resetMocks();
   });
 
-  test('Llamar una API y retornar datos', () => {
+  test('LLamar API', () => {
     fetch.mockResponseOnce(JSON.stringify({ data: '12345' }));
 
     getData('https://google.com')
-      .then((response) => {
+      .then((response, _) => {
         expect(response.data).toEqual('12345');
-      });
+      })
+      .catch(console.log);
+
     expect(fetch.mock.calls[0][0]).toEqual('https://google.com');
   });
-
 });

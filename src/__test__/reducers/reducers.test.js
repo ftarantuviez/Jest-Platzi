@@ -2,7 +2,7 @@ import reducer from '../../reducers';
 import ProductMock from '../../__mocks__/ProductMock';
 
 describe('Reducers', () => {
-  test('Retornar initial State', () => {
+  test('Retornar initial state', () => {
     expect(reducer({}, '')).toEqual({});
   });
   test('ADD_TO_CART', () => {
@@ -15,9 +15,7 @@ describe('Reducers', () => {
       payload,
     };
     const expected = {
-      cart: [
-        ProductMock,
-      ],
+      cart: [ProductMock],
     };
     expect(reducer(initialState, action)).toEqual(expected);
   });

@@ -13,7 +13,7 @@ describe('<Header />', () => {
     );
     expect(header.length).toEqual(1);
   });
-  test('Render del Titulo', () => {
+  test('Mount del componente Header', () => {
     const header = mount(
       <ProviderMock>
         <Header />
@@ -23,8 +23,8 @@ describe('<Header />', () => {
   });
 });
 
-describe('Header SnapShot', () => {
-  test('Comprobar el Snapshot de Header', () => {
+describe('<Header /> Snapshot', () => {
+  test('UI del componente Header', () => {
     const header = create(
       <ProviderMock>
         <Header />

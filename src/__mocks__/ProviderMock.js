@@ -11,9 +11,7 @@ const history = createBrowserHistory();
 
 const ProviderMock = props => (
   <Provider store={store}>
-    <Router history={history}>
-      {props.children}
-    </Router>
+    <Router history={history}>{props.children}</Router>
   </Provider>
 );
 
